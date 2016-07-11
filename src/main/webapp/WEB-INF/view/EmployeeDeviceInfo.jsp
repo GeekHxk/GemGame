@@ -25,6 +25,19 @@
 </head>
 <body>
 	<%@ include file="EmployeeHead.jsp"%>
+	<!-- /. NAV SIDE  -->
+	<div id="page-wrapper">
+		<div class="header">
+			<h1 class="page-header">
+				Empty Page <small>Create new page.</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Empty</a></li>
+				<li class="active">Data</li>
+			</ol>
+
+		</div>
 	<div id="page-inner">
 		<div class="panel panel-info">
 			<div class="panel-heading">
@@ -36,11 +49,19 @@
 						<form>
 						  <div class="form-group">
 						    <label for="exampleInputEmail1">设备名</label>
-						    <input type="text" class="form-control" name="companyAddress" value="江苏" readonly="readonly">
+						    <input type="text" class="form-control" name="companyAddress" value="江苏" >
 						  </div>
 						  <div class="form-group">
 						    <label for="exampleInputPassword1">生产商</label>
-						    <input type="text" class="form-control" name="companyAddress" value="13621415454" readonly="readonly">
+						    <input type="text" class="form-control" name="companyAddress" value="13621415454">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">生产商phone</label>
+						    <input type="text" class="form-control" name="companyAddress" value="13621415454">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">caigoushijain</label>
+						    <input type="date" class="form-control" name="companyAddress" value="">
 						  </div>
 						  <button type="button" class="btn btn-default">保存设备信息</button>
 						  <button type="submit" class="btn btn-default">生成二维码</button>
@@ -48,6 +69,7 @@
 						</form>
 					</div>
 					<div class="col-md-4">
+					<img alt="" src="">
 					</div>
 				</div>
 			  

@@ -33,7 +33,7 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
 
-@Controller
+//@Controller
 public class UserController {
 
 	

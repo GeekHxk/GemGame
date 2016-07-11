@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/bootstrap.css" />
 </head>
 
 
@@ -235,8 +235,8 @@
 					type="radio" value="" />员工
 			</p>
 			<p class="clearfix">
-				<a href="#" class="log-twitter">登录</a> <input type="submit"
-					name="submit" value="注册">
+				 <input type="submit" name="submit" value="注册">
+				 <a href="#" class="log-twitter">登录</a>
 			</p>
 		</form>
 		​​

@@ -42,7 +42,7 @@
 				<li><a href="index.html"><i class="fa fa-dashboard"></i>
 						个人信息</a></li>
 				<li><a href="ui-elements.html"><i class="fa fa-desktop"></i>
-						UI Elements</a></li>
+						ccc</a></li>
 
 				<li><a href="#"><i class="fa fa-sitemap"></i> Charts<span
 						class="fa arrow"></span></a>
@@ -78,16 +78,4 @@
 		</div>
 
 	</nav>
-	<!-- /. NAV SIDE  -->
-	<div id="page-wrapper">
-		<div class="header">
-			<h1 class="page-header">
-				Empty Page <small>Create new page.</small>
-			</h1>
-			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Empty</a></li>
-				<li class="active">Data</li>
-			</ol>
-
-		</div>
+	
