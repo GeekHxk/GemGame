@@ -12,5 +12,10 @@ public class LoginController {
 		return "Login";
 	}
 	
+	@RequestMapping("/login")
+	public String getUserIndex(String login, String password){
+		
+		return "/";
+	}
 }
 

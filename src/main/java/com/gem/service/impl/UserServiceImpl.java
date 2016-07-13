@@ -12,10 +12,13 @@ public class UserServiceImpl implements UserService{
 
 
 	@Autowired  
-    private UserDao userDao;  
+    private UserDao userDao;
+
+	@Override
+	public User selectUserById(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}  
   
-    public User selectUserById(Integer userId) {  
-        return userDao.selectUserById(userId);    
-    }
 
 }

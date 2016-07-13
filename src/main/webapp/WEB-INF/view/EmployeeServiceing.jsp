@@ -4,6 +4,8 @@
 	String path = request.getContextPath();    
 	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";    
 %>
+<%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,127 +54,23 @@
 									id="dataTables-example">
 									<thead>
 										<tr>
-											<th>Rendering engine</th>
-											<th>Browser</th>
-											<th>Platform(s)</th>
-											<th>Engine version</th>
-											<th>CSS grade</th>
+											<th>公司名</th>
+											<th>报修人</th>
+											<th>报修人电话</th>
+											<th>维修状态</th>
+											<th>维修人</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr class="odd gradeX">
-											<td>Trident</td>
-											<td>Internet Explorer 4.0</td>
-											<td>Win 95+</td>
-											<td class="center">4</td>
-											<td class="center">X</td>
-										</tr>
-										<tr class="even gradeC">
-											<td>Trident</td>
-											<td>Internet Explorer 5.0</td>
-											<td>Win 95+</td>
-											<td class="center">5</td>
-											<td class="center">C</td>
-										</tr>
-										<tr class="odd gradeA">
-											<td>Trident</td>
-											<td>Internet Explorer 5.5</td>
-											<td>Win 95+</td>
-											<td class="center">5.5</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Gecko</td>
-											<td>Seamonkey 1.1</td>
-											<td>Win 98+ / OSX.2+</td>
-											<td class="center">1.8</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Gecko</td>
-											<td>Epiphany 2.20</td>
-											<td>Gnome</td>
-											<td class="center">1.8</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Webkit</td>
-											<td>Safari 1.2</td>
-											<td>OSX.3</td>
-											<td class="center">125.5</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Webkit</td>
-											<td>Safari 1.3</td>
-											<td>OSX.3</td>
-											<td class="center">312.8</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Webkit</td>
-											<td>iPod Touch / iPhone</td>
-											<td>iPod</td>
-											<td class="center">420.1</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Webkit</td>
-											<td>S60</td>
-											<td>S60</td>
-											<td class="center">413</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 7.0</td>
-											<td>Win 95+ / OSX.1+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 7.5</td>
-											<td>Win 95+ / OSX.2+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 8.0</td>
-											<td>Win 95+ / OSX.2+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 8.5</td>
-											<td>Win 95+ / OSX.2+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 9.0</td>
-											<td>Win 95+ / OSX.3+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 9.2</td>
-											<td>Win 88+ / OSX.3+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										<tr class="gradeA">
-											<td>Presto</td>
-											<td>Opera 9.5</td>
-											<td>Win 88+ / OSX.3+</td>
-											<td class="center">-</td>
-											<td class="center">A</td>
-										</tr>
-										
+										<c:forEach items="${listRepair }" var="repair">
+											<tr class="odd gradeX">
+												<td>${repair.companyName }</td>
+												<td>${repair.repairName }</td>
+												<td>${repair.repairPhone }</td>
+												<td class="center">${repair.state }</td>
+												<td class="center">${repair.serviceName }</td>
+											</tr>
+										</c:forEach>
 									</tbody>
 								</table>
 							</div>
@@ -181,7 +79,6 @@
 					<!--End Advanced Tables -->
 				</div>
 			</div>
-
 			<footer>
 				<p>
 					Copyright &copy; 2016.Company name All rights reserved.<a

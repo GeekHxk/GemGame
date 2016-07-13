@@ -19,7 +19,7 @@
 </head>
 <body>
 
-	<%@ include file="EmployeeHead.jsp"%>
+	<%@ include file="SysHead.jsp"%>
 	<!-- /. NAV SIDE  -->
 	<div id="page-wrapper">
 		<div class="header">

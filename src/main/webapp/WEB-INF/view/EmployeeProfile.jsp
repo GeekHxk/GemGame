@@ -25,11 +25,11 @@
 	<div id="page-wrapper">
 		<div class="header">
 			<h1 class="page-header">
-				Empty Page <small>Create new page.</small>
+				 个人信息<small>Name.</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Empty</a></li>
+				<li><a href="#">Profile</a></li>
 				<li class="active">Data</li>
 			</ol>
 

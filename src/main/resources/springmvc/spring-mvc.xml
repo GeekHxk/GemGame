@@ -10,13 +10,29 @@
     http://www.springframework.org/schema/context  
     http://www.springframework.org/schema/context/spring-context-3.2.xsd  
     http://www.springframework.org/schema/mvc  
-    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">  
-       
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+  
    <!-- 扫描controller（controller层注入） -->  
    <context:component-scan base-package="com.gem.controller"/> 
       
-   <!-- 静态资源访问（不拦截此目录下的东西的访问） -->    
+   <!-- 静态资源访问（不拦截此目录下的东西的访问）     -->
    <mvc:annotation-driven />    
+   <!-- 
+	<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager" />   
+	<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">   
+	    <property name="favorPathExtension" value="false" />  
+	    <property name="favorParameter" value="false" />   
+	    <property name="ignoreAcceptHeader" value="false" />   
+	    <property name="mediaTypes" >   
+	        <value>  
+	            atom=application/atom+xml  
+	            html=text/html  
+	            json=application/json  
+	            *=*/*  
+	        </value>   
+	    </property>  
+	</bean>
+	 -->
    <mvc:resources location="/WEB-INF/assets/js/*"  mapping="/assets/js/**" />
    <mvc:resources location="/WEB-INF/assets/css/*"  mapping="/assets/css/**" />
    <mvc:resources location="/WEB-INF/assets/fonts/*"  mapping="/assets/fonts/**" />

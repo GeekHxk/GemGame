@@ -6,12 +6,16 @@
 	<!--设置domain类和数据库中表的字段一一对应，注意数据库字段和domain类中的字段名称不致，此处一定要！-->  
  
     <!-- 查询单条记录 -->  
-    <select id="selectUserByState" parameterType="String" resultType="com.gem.model.RepairInfo">  
-        SELECT * FROM repairinfo WHERE state = #{0}  
+    <select id="selectRepairInfoByState" parameterType="String" resultType="com.gem.model.RepairInfo">  
+        SELECT * FROM repairinfo WHERE state = #{state}  
     </select>
     
-    <insert id="insertRepairInfo" parameterType="RepairInfo">
+    <insert id="insertRepairInfo" parameterType="com.gem.model.RepairInfo">
     	insert into repairinfo (companyname,repairname,repairphone,state) values (#{companyname},#{repairname},#{repairphone},#{state})
     </insert>
     
+    <!--第一次分配维修员工更新报修信息的的状态和维修员工-->
+    <update id="updateRepairInfoInStateAndName">
+    	update repairinfo set servicename = #{0} where
+    </update>
 </mapper>

@@ -4,14 +4,35 @@ public class RepairInfo {
 	public RepairInfo(){
 		
 	}
-	
+	private int id;
+	private String number;
 	private String companyName;
 	private String repairName;
 	private String repairPhone;
 	private String state;
+	private String serviceName;
 	
 	public String getCompanyName() {
 		return companyName;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	public String getServiceName() {
+		return serviceName;
+	}
+	public void setServiceName(String serviceName) {
+		this.serviceName = serviceName;
 	}
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
@@ -38,7 +59,8 @@ public class RepairInfo {
 	
 	@Override
 	public String toString() {
-		return "RepairInfo [companyName=" + companyName + ", repairName=" + repairName + ", repairPhone=" + repairPhone
+		return "RepairInfo [id=" + id + ", number=" + number + ", companyName=" + companyName + ", repairName="
+				+ repairName + ", repairPhone=" + repairPhone + ", state=" + state + ", serviceName=" + serviceName
 				+ "]";
 	}
 	

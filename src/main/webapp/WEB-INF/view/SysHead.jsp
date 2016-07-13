@@ -12,9 +12,6 @@
 			</button>
 			<a class="navbar-brand" href="index.html"><strong><i
 					class="icon fa fa-plane"></i> 后台管理系统</strong></a>
-			<div id="sideNav" href="">
-				<i class="fa fa-bars icon"></i>
-			</div>
 		</div>
 
 		<ul class="nav navbar-top-links navbar-right">
@@ -42,37 +39,10 @@
 				<li><a href="index.html"><i class="fa fa-dashboard"></i>
 						个人信息</a></li>
 				<li><a href="ui-elements.html"><i class="fa fa-desktop"></i>
-						ccc</a></li>
-
-				<li><a href="#"><i class="fa fa-sitemap"></i> Charts<span
-						class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-						<li><a href="chart.html">Charts JS</a></li>
-						<li><a href="morris-chart.html">Morris Chart</a></li>
-					</ul></li>
+						公司账号管理</a></li>
 				<li><a href="tab-panel.html"><i class="fa fa-qrcode"></i>
-						Tabs & Panels</a></li>
+						公司账号审核</a></li>
 
-				<li><a href="table.html"><i class="fa fa-table"></i>
-						Responsive Tables</a></li>
-				<li><a href="form.html"><i class="fa fa-edit"></i> Forms </a></li>
-
-
-				<li><a href="#"><i class="fa fa-sitemap"></i> Multi-Level
-						Dropdown<span class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-						<li><a href="#">Second Level Link</a></li>
-						<li><a href="#">Second Level Link</a></li>
-						<li><a href="#">Second Level Link<span class="fa arrow"></span></a>
-							<ul class="nav nav-third-level">
-								<li><a href="#">Third Level Link</a></li>
-								<li><a href="#">Third Level Link</a></li>
-								<li><a href="#">Third Level Link</a></li>
-
-							</ul></li>
-					</ul></li>
-				<li><a class="active-menu" href="empty.html"><i
-						class="fa fa-fw fa-file"></i> Empty Page</a></li>
 			</ul>
 
 		</div>

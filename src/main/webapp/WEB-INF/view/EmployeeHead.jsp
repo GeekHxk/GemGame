@@ -38,12 +38,17 @@
 
 				<li><a href="employeeProfile"><i class="fa fa-dashboard"></i>
 						个人信息</a></li>
-				<li><a href="employeeDeviceInfo"><i class="fa fa-qrcode"></i>
-						设备信息录入</a></li>
+				<li><a href="#"><i class="fa fa-edit"></i> 设备信息<span
+				class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+						<li><a href="employeeDeviceInfo">信息采集</a></li>
+						<li><a href="socialServiceManInfo">信息修改</a></li>
+					</ul></li>
 				<li><a href="#"><i class="fa fa-sitemap"></i> 维修信息<span
 						class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li><a href="beforeService">尚未维修</a></li>
+						<li><a href="goService">正前往维修</a></li>
 						<li><a href="serviceing">正在维修</a></li>
 						<li><a href="afterService">历史维修</a></li>
 					</ul></li>
@@ -53,7 +58,7 @@
 						<li><a href="companyServiceManInfo">公司维修员</a></li>
 						<li><a href="socialServiceManInfo">社会维修员</a></li>
 					</ul></li>
-				<li><a href="employeeQRcode"><i class="fa fa-edit"></i> 公司二维码 </a></li>
+				<li><a href="employeeQRcode"><i class="fa fa-qrcode"></i> 公司二维码 </a></li>
 			</ul>
 
 		</div>

@@ -18,8 +18,8 @@ public class RepairInfoServiceImpl implements RepairInfoService{
 	
 	@Override
 	public List<RepairInfo> getRepairByState(String state) {
-		// TODO Auto-generated method stub
-		return null;
+		List<RepairInfo> list = rid.selectRepairInfoByState(state);
+		return list;
 	}
 
 	@Override
